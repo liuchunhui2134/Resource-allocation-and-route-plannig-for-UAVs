@@ -387,11 +387,11 @@ class Agent(BaseModel):
             p_3 = number_3 / (number_0 + number_1 + number_2 + number_3)
 
             plt.plot(bin_edges[:-1]*0.1 + 0.01, p_0, 'b*-', label='Power Level 23 dB')
-            plt.plot(bin_edges[:-1]*0.1 + 0.01, p_1, 'rs-', label='Power Level 10 dB')
+            plt.plot(bin_edges[:-1]*0.1 + 0.01, p_1, 'rs-', label='Power Level 12 dB')
             plt.plot(bin_edges[:-1]*0.1 + 0.01, p_2, 'go-', label='Power Level 5 dB')
             plt.plot(bin_edges[:-1]*0.1 + 0.01, p_3, 'y^-', label='Power Level 1 dB')
             plt.xlim([0, 0.12])
-            plt.xlabel("Time left for V2V transmission (s)")
+            plt.xlabel("Time left for U2U transmission (s)")
             plt.ylabel("Probability of power selection")
             plt.legend()
             plt.grid()
